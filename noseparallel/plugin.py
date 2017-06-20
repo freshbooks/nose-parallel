@@ -18,7 +18,7 @@ class ParallelPlugin(Plugin):
 
     def wantFile(self, file):
         try:
-            return self._pick_by_name(file.name)
+            return self._pick_by_name(file)
         except AttributeError:
             return None
         return None

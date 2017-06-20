@@ -8,7 +8,7 @@ class PluginTest(unittest.TestCase):
         plugin = ParallelPlugin()
         plugin.salt = 'test'
         plugin.total_nodes = 2
-        testFile = open("tests/plugin_test.py", "r")
+        testFile = "tests/plugin_test.py"
         plugin.node_index = 0
         rv0 = plugin.wantFile(testFile)
 
