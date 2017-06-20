@@ -16,19 +16,19 @@ class ParallelPlugin(Plugin):
         self.total_nodes = int(os.environ.get('CIRCLE_NODE_TOTAL') or os.environ.get('NODE_TOTAL', 1))
         self.node_index = int(os.environ.get('CIRCLE_NODE_INDEX') or os.environ.get('NODE_INDEX', 0))
 
-    def wantMethod(self, method):
+    def wantFile(self, method):
         try:
             return self._pick_by_name(method.__name__)
         except AttributeError:
             return None
         return None
 
-    def wantFunction(self, function):
-        try:
-            return self._pick_by_name(function.__name__)
-        except AttributeError:
-            return None
-        return None
+#     def wantFunction(self, function):
+#         try:
+#             return self._pick_by_name(function.__name__)
+#         except AttributeError:
+#             return None
+#         return None
 
     def _pick_by_name(self, name):
         m = hashlib.md5(self.salt.encode('utf-8'))
