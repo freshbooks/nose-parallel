@@ -1,7 +1,7 @@
 nose-parallel
 =============
 
-This is a fork of dlanger/nose-parallel. The behaviour of this fork will split tests amoung test files rather than individual tests. If you plan on using nose-parallel, I suggest you refer to the original fork.
+**This is a fork of dlanger/nose-parallel. The behaviour of this fork will split tests amoung test files rather than individual tests. If you plan on using nose-parallel, I suggest you refer to the original fork.**
 
 
 
