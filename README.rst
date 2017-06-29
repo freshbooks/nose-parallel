@@ -1,6 +1,12 @@
 nose-parallel
 =============
 
+This is a fork of dlanger/nose-parallel. The behaviour of this fork will split tests amoung test files rather than individual tests. If you plan on using nose-parallel, I suggest you refer to the original fork.
+
+
+
+
+
 A plugin to help split up your tests runs across multiple machines.
 
 In an ideal world, test suites should be fast enough that they can
@@ -21,10 +27,7 @@ plugin, or CI services like `CircleCI <https://circleci.com/docs/parallel-manual
 
 Install
 -------
-
-.. code:: bash
-
-   pip install nose-parallel
+Please refer to dlanger/nose-parallel. 
 
 
 Usage
