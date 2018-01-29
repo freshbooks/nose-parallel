@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='nose-parallel',
-    version='0.2.4',
+    version='0.2.5',
     description=u'A nosetests plugin to split test suites to run in parallel',
     long_description=open('README.rst').read(),
     author=', '.join([
