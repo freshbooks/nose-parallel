@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='nose-parallel',
-    version='0.2.3',
+    version='0.2.5',
     description=u'A nosetests plugin to split test suites to run in parallel',
     long_description=open('README.rst').read(),
     author=', '.join([
@@ -19,7 +19,7 @@ setup(
     author_email='daniel@langer.me',
     url='https://github.com/dlanger/nose-parallel',
     packages=['noseparallel', ],
-    test_suite = 'nose.collector',
+    test_suite='nose.collector',
     tests_require=['nose'],
     license='LICENSE',
     entry_points='''
@@ -33,7 +33,6 @@ setup(
         'Natural Language :: English',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
         'Topic :: Software Development :: Testing',
         'Environment :: Console',
     ],
